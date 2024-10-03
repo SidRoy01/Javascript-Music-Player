@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(85, 8, 8);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background-image: url(background.jpg);
+  background-size: cover;
+  width: 370px;
+  font-size: 20px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 4px 4px 8px rgb(0, 0, 0);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav p {
+  font-size: 10px;
+}
+
+.slider-image-1{
+  background-size: cover;
+  width: 350px;
+  height: 330px;
+  margin-top: 50px;
+  border-radius: 50%;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.985);
+}
+.songname {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.time {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+#progress {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+}
+#progress::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: white;
+}
+.navigate {
+ 
+  display: flex;
+  justify-content: space-evenly;
+
+}
+.navigate div {
+  margin: 20px;
+  height: 30px;
+  width: 30px;
+  font-size: 22px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+i:hover{
+  color: green;
+}
+.navigate div:nth-child(1) {
+  color: green;
+  margin-left: 0;
+}
+.navigate div:nth-child(5) {
+  margin-right: 0;
+}
+.navigate div:nth-child(3) {
+  transform: scale(2.3);
+}
+.extras {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.animation {
+  animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+ @media screen and (max-width: 280px) {
+  .container{
+    width: 250px;
+  }
+  .slider-image-1{
+    width: 220px;
+    height: 200px;
+  }
+  .navigate div{
+    margin: 15px;
+    
+  }
+
+ }

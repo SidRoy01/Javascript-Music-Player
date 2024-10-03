@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div><i class="fa-solid fa-angle-down"></i></div>
+        <p id="albumname">PLAYING FROM ALBUM Sultan</p>
+        <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
+      </nav>
+      <img src="img/Bulleya.jpg" class="slider-image-1" id="albumart">
+      <div class="songname">
+        <h2 id="song-name"></h2>
+        <!-- <h3 id="artist-name"></h3> -->
+        <i class="fa-solid fa-circle-plus"></i>
+      </div>
+      <div class="time">
+        <span id="current-time">0:00</span>  <span id="total-duration">0:00</span>
+      </div>
+
+      <input type="range" value="0" id="progress" />
+
+      <div class="navigate">
+        <div><i class="fa-solid fa-shuffle"></i></div>
+        <div><i class="fa-solid fa-backward-step" id="previous"></i></div>
+        <div><i class="fa-solid fa-circle-play " id="pause"></i></div>
+        <div><i class="fa-solid fa-forward-step" id="next"></i></div>
+        <div><i class="fa-solid fa-stopwatch"></i></div>
+      </div>
+      <div class="extras">
+        <div><i class="fa-solid fa-mobile-screen-button"></i></div>
+        <div><i class="fa-solid fa-share-nodes"></i></div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
